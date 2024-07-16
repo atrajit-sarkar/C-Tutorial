@@ -5,13 +5,12 @@ float f(float);
 
 float f(float x)
 {
-
-    return pow(x, 5) + x + 1;
+    return pow(2, x) - pow(x, 2);
 }
+
 int main()
 {
-    float x = -0.76, y = -0.74, epsilon = 0.00025;
-    // int i=1;
+    float x = -0.8, y = -0.75, epsilon = 0.0025;
     do
     {
         if (f(x) * f((x + y) / 2) > 0)
